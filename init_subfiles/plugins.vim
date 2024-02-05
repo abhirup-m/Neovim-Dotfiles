@@ -1,0 +1,15 @@
+call plug#begin()
+	Plug 'hrsh7th/cmp-buffer'
+	Plug 'hrsh7th/cmp-path'
+	Plug 'hrsh7th/cmp-cmdline'
+	Plug 'hrsh7th/vim-vsnip'
+	Plug 'hrsh7th/cmp-vsnip'
+	Plug 'hrsh7th/cmp-nvim-lsp'
+	Plug 'hrsh7th/nvim-cmp'
+	Plug 'navarasu/onedark.nvim'
+	Plug 'neovim/nvim-lspconfig'
+	Plug 'nvim-lua/completion-nvim'
+	Plug 'anott03/nvim-lspinstall'
+	Plug 'lervag/vimtex'
+	Plug 'ojroques/nvim-hardline'
+call plug#end()
