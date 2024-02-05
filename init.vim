@@ -6,3 +6,4 @@ source init_subfiles/vimtex.vim
 source init_subfiles/lsp.vim
 source init_subfiles/autocommands.vim
 source init_subfiles/functions.vim
+source init_subfiles/colscheme.vim
