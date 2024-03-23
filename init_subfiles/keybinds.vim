@@ -1,10 +1,8 @@
 " map Q to close buffer
 nnoremap Q :call ExitBuffer()<CR>
 " Disable arrow keys
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Right> <Nop>
-noremap <Left> <Nop>
+noremap <Up> gk
+noremap <Down> gj
 " Map L and H keys to navigate to neighbouring tabs
 nnoremap H :bnext<CR>
 nnoremap L :bprevious<CR>
@@ -19,3 +17,8 @@ vnoremap j gj
 " map Y to compile function
 noremap Y :call Compile()<CR>
 nnoremap <Leader>r :so $MYVIMRC<CR>
+" toggle comment
+nmap <C-/> gcc
+vmap <C-/> gc
+" open init_subfiles folder
+nnoremap <Leader>c :e ~/.config/nvim/init_subfiles

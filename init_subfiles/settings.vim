@@ -1,4 +1,5 @@
 set clipboard+=unnamedplus "use system clipboard"
+set whichwrap+=<,>,[,] "allow me to navigate to next line by pressing right
 set autowriteall
 set guifont="RobotoMono Nerd Font Propo 10"
 set autochdir "change into directory of opened/switched buffer"
@@ -6,7 +7,7 @@ set showtabline=2 "always show tabline"
 set termguicolors " Enables 24-bit RGB color"
 set ignorecase
 set smartcase " Override the 'ignorecase' option if the search pattern contains upper case characters"
-set swapfile " Don't use a swapfile for the buffer"
+set noswapfile " Don't use a swapfile for the buffer"
 set undofile "enable undofile"
 set backspace=indent,eol,start "allow backspacing in INSERT mode"
 set number "display line numbers"
@@ -22,3 +23,8 @@ set wrap "wrap text"
 let g:neovide_cursor_animation_length = 0
 let g:python3_host_prog = "/usr/bin/python"
 let g:mapleader = " "
+set guifont=Roboto\ Mono:h13
+let g:UltiSnipsSnippetDirectories=["UltiSnips"]
+let g:UltiSnipsExpandTrigger = "<Tab>"
+let g:UltiSnipsJumpForwardTrigger = "<Tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<S-Tab>"

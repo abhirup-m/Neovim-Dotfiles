@@ -4,7 +4,6 @@ let g:vimtex_quickfix_ignore_filters = ['.*Overfull.*','.*Warning: Foreign comma
 let g:vimtex_quickfix_open_on_warning=1
 let g:vimtex_view_method='zathura'
 let g:vimtex_matchparen_enabled=0
-let g:vimtex_compiler_method='tectonic'
 
 let g:onedark_config = {
 	\ 'toggle_style_key' : 'tt',

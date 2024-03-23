@@ -1,4 +1,9 @@
 call plug#begin()
+	Plug 'terryma/vim-multiple-cursors'
+	Plug 'tpope/vim-commentary'
+	Plug 'smoka7/multicursors.nvim'
+	Plug 'SirVer/ultisnips'
+	Plug 'JuliaEditorSupport/julia-vim'
 	Plug 'hrsh7th/cmp-buffer'
 	Plug 'hrsh7th/cmp-path'
 	Plug 'hrsh7th/cmp-cmdline'
