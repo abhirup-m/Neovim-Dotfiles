@@ -19,6 +19,7 @@ set smartindent "indent keeping braces in mind"
 set tabstop=4 "tabs are worth four spaces"
 set shiftwidth=0 "width of indentation, 0 means use tabstop"
 set wrap "wrap text"
+set spell "spell check"
 
 let g:neovide_cursor_animation_length = 0
 let g:python3_host_prog = "/usr/bin/python"
