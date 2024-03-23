@@ -2,6 +2,8 @@
 
 **Configuration files for my neovim installation. Designed for Latex, Python and Julia**
 
+![](screenshot.png)
+
 ## Description of files
 
 - [init.vim](init.vim): Main config file that imports all subfiles
@@ -24,44 +26,14 @@
 
 ## Plugins
 
-**Utility**
+- **Utility**: 
+[terryma/vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors), [tpope/vim-commentary](https://github.com/tpope/vim-commentary), [navarasu/onedark.nvim](https://github.com/navarasu/onedark.nvim), [ojroques/nvim-hardline](https://github.com/ojroques/nvim-hardline)
 
-- [terryma/vim-multiple-cursors](https://github.com/terryma/vim-multiple-cursors)
+- **Autocomplete**: 
+[SirVer/ultisnips](https://github.com/SirVer/ultisnips), [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer), [hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path), [hrsh7th/cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline), [hrsh7th/vim-vsnip](https://github.com/hrsh7th/vim-vsnip), [hrsh7th/cmp-vsnip](https://github.com/hrsh7th/cmp-vsnip), [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp), [nvim-lua/completion-nvim](https://github.com/nvim-lua/completion-nvim)
 
-- [tpope/vim-commentary](https://github.com/tpope/vim-commentary)
+- **LSP**: 
+[hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp), [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig), [anott03/nvim-lspinstall](https://github.com/anott03/nvim-lspinstall)
 
-- [navarasu/onedark.nvim](https://github.com/navarasu/onedark.nvim)
-
-- [ojroques/nvim-hardline](https://github.com/ojroques/nvim-hardline)
-
-
-**Autocomplete**
-- [SirVer/ultisnips](https://github.com/SirVer/ultisnips)
-
-- [hrsh7th/cmp-buffer](https://github.com/hrsh7th/cmp-buffer)
-
-- [hrsh7th/cmp-path](https://github.com/hrsh7th/cmp-path)
-
-- [hrsh7th/cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline)
-
-- [hrsh7th/vim-vsnip](https://github.com/hrsh7th/vim-vsnip)
-
-- [hrsh7th/cmp-vsnip](https://github.com/hrsh7th/cmp-vsnip)
-
-- [hrsh7th/nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
-
-- [nvim-lua/completion-nvim](https://github.com/nvim-lua/completion-nvim)
-
-
-**LSP**
-- [hrsh7th/cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp)
-
-- [neovim/nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
-
-- [anott03/nvim-lspinstall](https://github.com/anott03/nvim-lspinstall)
-
-
-**Language specific**
-- [JuliaEditorSupport/julia-vim](https://github.com/JuliaEditorSupport/julia-vim)
-
-- [lervag/vimtex](https://github.com/lervag/vimtex)
+- **Language specific**: 
+[JuliaEditorSupport/julia-vim](https://github.com/JuliaEditorSupport/julia-vim), [lervag/vimtex](https://github.com/lervag/vimtex)
