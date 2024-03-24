@@ -70,5 +70,6 @@ lua <<EOF
   }
   require('lspconfig')['bashls'].setup {
     capabilities = capabilities
-  }
+  }  
+  require'lspconfig'.pylsp.setup{}
 EOF
