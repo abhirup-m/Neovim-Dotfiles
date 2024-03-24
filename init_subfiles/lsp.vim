@@ -71,5 +71,6 @@ lua <<EOF
   require('lspconfig')['bashls'].setup {
     capabilities = capabilities
   }  
-  require'lspconfig'.pylsp.setup{}
+  require'lspconfig'.pylsp.setup{} -- some useful plugins are pyflakes and python-lsp-ruff
+
 EOF

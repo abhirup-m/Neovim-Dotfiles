@@ -6,3 +6,4 @@ augroup vimrc-incsearch-highlight
 augroup END
 
 autocmd FileType markdown,tex setlocal spell
+autocmd BufWritePre *.py :lua vim.lsp.buf.format()
