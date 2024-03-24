@@ -9,18 +9,17 @@ local default_config = {
   on_attach = custom_on_attach,
 }
 -- setup language servers here
-lspconfig.tsserver.setup(default_config)
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
     underline = true,
-    virtual_text = false,
+    virtual_text = true,
     signs = true,
     update_in_insert = true,
   }
 )
+
 EOF
 
-lua require'lspconfig'.texlab.setup{}
 lua <<EOF
 -- Set up nvim-cmp.
   local cmp = require'cmp'
@@ -69,5 +68,7 @@ lua <<EOF
   require('lspconfig')['texlab'].setup {
     capabilities = capabilities
   }
-  require'lspconfig'.bashls.setup{}
+  require('lspconfig')['bashls'].setup {
+    capabilities = capabilities
+  }
 EOF

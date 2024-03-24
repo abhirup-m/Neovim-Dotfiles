@@ -22,3 +22,5 @@ nmap <C-/> gcc
 vmap <C-/> gc
 " open init_subfiles folder
 nnoremap <Leader>c :e ~/.config/nvim/init_subfiles
+" display diagnostics
+nnoremap <Leader>d :lua vim.diagnostic.open_float()<CR>
