@@ -1,20 +1,27 @@
 call plug#begin()
-	Plug 'terryma/vim-multiple-cursors'
-	Plug 'tpope/vim-commentary'
-	Plug 'smoka7/multicursors.nvim'
-	Plug 'SirVer/ultisnips'
-	Plug 'JuliaEditorSupport/julia-vim'
-	Plug 'hrsh7th/cmp-buffer'
-	Plug 'hrsh7th/cmp-path'
-	Plug 'hrsh7th/cmp-cmdline'
-	Plug 'hrsh7th/vim-vsnip'
-	Plug 'hrsh7th/cmp-vsnip'
-	Plug 'hrsh7th/cmp-nvim-lsp'
-	Plug 'hrsh7th/nvim-cmp'
-	Plug 'navarasu/onedark.nvim'
+	" lsp plugins
 	Plug 'neovim/nvim-lspconfig'
-	Plug 'nvim-lua/completion-nvim'
-	Plug 'anott03/nvim-lspinstall'
+
+	""" completion plugins
+	Plug 'hrsh7th/nvim-cmp' " completion plugin
+	Plug 'hrsh7th/cmp-nvim-lsp' " nvim-cmp source for neovim builtin LSP client
+	Plug 'hrsh7th/cmp-vsnip' " nvim-cmp source for vim-vsnip
+	Plug 'hrsh7th/vim-vsnip' " Snippet plugin for vim/nvim that supports LSP/VSCode's snippet format
+	Plug 'hrsh7th/cmp-buffer' " nvim-cmp source for buffer words
+	Plug 'hrsh7th/cmp-path' " nvim-cmp source for filesystem paths
+	Plug 'hrsh7th/cmp-cmdline' " nvim-cmp source for vim's cmdline
+
+	" utility plugins
+	Plug 'terryma/vim-multiple-cursors' " allows multiple cursors
+	Plug 'tpope/vim-commentary' " allows commenting out blocks of text
+	Plug 'SirVer/ultisnips' " snippet engine
+	
+	" language-specific
+	Plug 'JuliaEditorSupport/julia-vim'
 	Plug 'lervag/vimtex'
+
+	" ui
+	Plug 'navarasu/onedark.nvim'
 	Plug 'ojroques/nvim-hardline'
+
 call plug#end()

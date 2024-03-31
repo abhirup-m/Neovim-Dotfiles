@@ -21,7 +21,7 @@ set shiftwidth=0 "width of indentation, 0 means use tabstop"
 set wrap "wrap text"
 
 let g:neovide_cursor_animation_length = 0
-let g:python3_host_prog = "/home/kirito/miniconda3/bin/python"
+let g:python3_host_prog = "/usr/bin/python"
 let g:mapleader = " "
 set guifont=Roboto\ Mono:h13
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
