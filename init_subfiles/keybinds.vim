@@ -18,9 +18,11 @@ vnoremap j gj
 noremap Y :call Compile()<CR>
 nnoremap <Leader>r :so $MYVIMRC<CR>
 " toggle comment
-nmap <C-/> gcc
-vmap <C-/> gc
+nmap ' gcc
+vmap ' gc
 " open init_subfiles folder
 nnoremap <Leader>c :e ~/.config/nvim/init_subfiles
 " display diagnostics
 nnoremap <Leader>d :lua vim.diagnostic.open_float()<CR>
+
+

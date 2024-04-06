@@ -13,7 +13,6 @@ call plug#begin()
 
 	" utility plugins
 	Plug 'terryma/vim-multiple-cursors' " allows multiple cursors
-	Plug 'tpope/vim-commentary' " allows commenting out blocks of text
 	Plug 'SirVer/ultisnips' " snippet engine
 	
 	" language-specific
