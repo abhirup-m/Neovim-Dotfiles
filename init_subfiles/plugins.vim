@@ -13,14 +13,18 @@ call plug#begin()
 
 	" utility plugins
 	Plug 'terryma/vim-multiple-cursors' " allows multiple cursors
-	Plug 'SirVer/ultisnips' " snippet engine
+	"Plug 'SirVer/ultisnips' " snippet engine
+	Plug 'L3MON4D3/LuaSnip'
 	
 	" language-specific
 	Plug 'JuliaEditorSupport/julia-vim'
 	Plug 'lervag/vimtex'
+	Plug 'kaarmu/typst.vim'
+	Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
 	" ui
-	Plug 'navarasu/onedark.nvim'
-	Plug 'ojroques/nvim-hardline'
+	Plug 'sainnhe/sonokai'
+	Plug 'nvim-lualine/lualine.nvim'
+	Plug 'akinsho/bufferline.nvim'
 
 call plug#end()

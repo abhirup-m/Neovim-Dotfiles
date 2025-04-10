@@ -4,6 +4,8 @@ func! Compile()
 		:silent! VimtexCompileSS
 	elseif &filetype == "python"
 		:!compile %
+	elseif &filetype == "typst"
+		:TypstWatch
 	endif
 endf
 
