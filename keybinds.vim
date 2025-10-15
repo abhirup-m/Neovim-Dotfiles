@@ -4,8 +4,8 @@ nnoremap Q :call ExitBuffer()<CR>
 noremap <Up> gk
 noremap <Down> gj
 " Map L and H keys to navigate to neighbouring tabs
-nnoremap H :bnext<CR>
-nnoremap L :bprevious<CR>
+nnoremap H :tabnext<CR>
+nnoremap L :tabprevious<CR>
 " use ctrl+tab to create a new tab
 nnoremap <C-t> :tabnew<CR>:edit<Space> 
 " map k and j to move up and down based on visual lines (as compared to actual

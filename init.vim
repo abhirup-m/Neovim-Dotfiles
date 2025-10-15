@@ -1,9 +1,10 @@
-source ~/.config/nvim/init_subfiles/settings.vim
-source ~/.config/nvim/init_subfiles/plugins.vim
-source ~/.config/nvim/init_subfiles/keybinds.vim
-source ~/.config/nvim/init_subfiles/tabline.vim
-source ~/.config/nvim/init_subfiles/vimtex.vim
-source ~/.config/nvim/init_subfiles/lsp.vim
-source ~/.config/nvim/init_subfiles/autocommands.vim
-source ~/.config/nvim/init_subfiles/functions.vim
-source ~/.config/nvim/init_subfiles/colscheme.vim
+source ~/.config/nvim/settings.vim
+source ~/.config/nvim/plugins.vim
+source ~/.config/nvim/keybinds.vim
+source ~/.config/nvim/tabline.vim
+source ~/.config/nvim/vimtex.vim
+source ~/.config/nvim/lsp.vim
+source ~/.config/nvim/autocommands.vim
+source ~/.config/nvim/functions.vim
+source ~/.config/nvim/colscheme.vim
+

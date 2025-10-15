@@ -31,17 +31,22 @@ lua <<EOF
   require('lspconfig')['texlab'].setup {
     capabilities = capabilities
   }
+  require'lspconfig'.julials.setup{}
   require('lspconfig')['bashls'].setup {
     capabilities = capabilities
   }  
+  require'lspconfig'.lua_ls.setup{}
   require'lspconfig'.pylsp.setup{} -- some useful plugins are pyflakes and python-lsp-ruff
   require("lspconfig")["tinymist"].setup {
   	settings = {
   		formatterMode = "typstyle",
-  		exportPdf = "onType",
+  		exportPdf = "never",
   		semanticTokens = "disable"
   	}
   }
+
+  require'lspconfig'.zls.setup{}
+  require'lspconfig'.gopls.setup{}
 
   local lspconfig = require'lspconfig'
   local function custom_on_attach(client)
@@ -69,12 +74,4 @@ lua <<EOF
 
   local ls = require("luasnip")
   local s = ls.snippet
-  -- local sn = ls.snippet_node
-  -- local t = ls.text_node
-  -- local i = ls.insert_node
-  -- local f = ls.function_node
-  -- local d = ls.dynamic_node
-  -- local fmt = require("luasnip.extras.fmt").fmt
-  -- local fmta = require("luasnip.extras.fmt").fmta
-  -- local rep = require("luasnip.extras").rep
 EOF

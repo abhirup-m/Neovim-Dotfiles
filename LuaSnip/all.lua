@@ -16,7 +16,7 @@ s({trig="ff", dscr="Expands 'ff' into '\frac{}{}'", snippetType="autosnippet"},
   )
 ),
 -- General Environment
-s({trig="beg", dscr="Expands 'beg' into an environment", snippetType="autosnippet"},
+s({trig="bgn", dscr="Expands 'beg' into an environment", snippetType="autosnippet"},
   fmta(
      [[
 		\begin{<>}
@@ -28,7 +28,7 @@ s({trig="beg", dscr="Expands 'beg' into an environment", snippetType="autosnippe
   )
 ),
 -- Equation
-s({trig="beq", dscr="Expands 'beq' into an equation environment", snippetType="autosnippet"},
+s({trig="bqn", dscr="Expands 'beq' into an equation environment", snippetType="autosnippet"},
   fmta(
      [[
 		\begin{equation}\begin{aligned}
@@ -115,6 +115,18 @@ s({trig="bmt", snippetType="autosnippet"},
   )
 ),
 -- closed () brackets
+s({trig="case", snippetType="autosnippet", condition=in_mathzone},
+  fmta(
+     [[
+	 \begin{cases}
+		 <>
+	 \end{cases}
+	 <>
+     ]],
+	 { i(1), i(2)}
+  )
+),
+-- closed () brackets
 s({trig="()", snippetType="autosnippet", condition=in_mathzone},
   fmta(
      [[
@@ -150,15 +162,6 @@ s({trig="<>", snippetType="autosnippet", condition=in_mathzone},
 	 { i(1), i(2)}
   )
 ),
--- square root
-s({trig="sq", snippetType="autosnippet", condition=in_mathzone},
-  fmta(
-     [[
-	 \sqrt{<>}<>
-     ]],
-	 { i(1), i(2)}
-  )
-),
 -- mathcal
 s({trig="mc", snippetType="autosnippet", condition=in_mathzone},
   fmta(
@@ -169,7 +172,7 @@ s({trig="mc", snippetType="autosnippet", condition=in_mathzone},
   )
 ),
 -- up arrow
-s({trig="ua", snippetType="autosnippet", condition=in_mathzone},
+s({trig="uw", snippetType="autosnippet", condition=in_mathzone},
   fmta(
      [[
 	 \uparrow
@@ -178,7 +181,7 @@ s({trig="ua", snippetType="autosnippet", condition=in_mathzone},
   )
 ),
 -- down arrow
-s({trig="da", snippetType="autosnippet", condition=in_mathzone},
+s({trig="dw", snippetType="autosnippet", condition=in_mathzone},
   fmta(
      [[
 	 \downarrow

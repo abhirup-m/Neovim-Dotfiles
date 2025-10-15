@@ -2,7 +2,8 @@ let g:vimtex_toc_config = {'tocdepth': 1, 'mode': 1, 'indent_levels': 1, 'layer_
 let g:vimtex_toc_show_preamble = 0
 let g:vimtex_quickfix_ignore_filters = ['.*Overfull.*','.*Warning: Foreign command.*','.*Underfull.*','.*Token not allowed in a PDF string.*','.*Package caption Warning: The option.*','.*Missing "title" in ', '.*Using fall-back BibTeX(8) backend.*', '.*Package biblatex Warning.*Invalid format of field.*','.*You need to compile with XeLaTeX or LuaLaTeX to use the Fira fonts on input line.*', '.*A float is stuck.*', '.*Package biblatex Warning: Using fall-back bibtex backend:', '.*Package fontspec Warning: OpenType feature.*', '.*Replacing it with the kernel definition.*']
 let g:vimtex_quickfix_open_on_warning=1
-let g:vimtex_view_method='zathura'
+let g:vimtex_view_general_viewer = 'okular --unique'
+let g:vimtex_view_general_options = '--unique file:@pdf\#src:@line@tex'
 let g:vimtex_matchparen_enabled=0
 let g:onedark_config = {
 	\ 'toggle_style_key' : 'tt',
@@ -13,3 +14,4 @@ let g:onedark_config = {
 		\ 'functions': 'bold',
 	\ }
 \}
+let g:typst_pdf_viewer='evince'
