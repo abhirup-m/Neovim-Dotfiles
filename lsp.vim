@@ -28,25 +28,44 @@ lua <<EOF
 
   -- Set up lspconfig.
   local capabilities = require('cmp_nvim_lsp').default_capabilities()
-  require('lspconfig')['texlab'].setup {
-    capabilities = capabilities
-  }
-  require'lspconfig'.julials.setup{}
-  require('lspconfig')['bashls'].setup {
-    capabilities = capabilities
-  }  
-  require'lspconfig'.lua_ls.setup{}
-  require'lspconfig'.pylsp.setup{} -- some useful plugins are pyflakes and python-lsp-ruff
-  require("lspconfig")["tinymist"].setup {
-  	settings = {
-  		formatterMode = "typstyle",
-  		exportPdf = "never",
-  		semanticTokens = "disable"
-  	}
-  }
-
-  require'lspconfig'.zls.setup{}
-  require'lspconfig'.gopls.setup{}
+  vim.lsp.config("texlab", {
+    capabilities = capabilities,
+  })
+  
+  vim.lsp.config("julials", {})
+  
+  vim.lsp.config("bashls", {
+    capabilities = capabilities,
+  })
+  
+  vim.lsp.config("lua_ls", {})
+  
+  vim.lsp.config("pylsp", {
+    -- some useful plugins: pyflakes, python-lsp-ruff
+  })
+  
+  vim.lsp.config("tinymist", {
+    settings = {
+      formatterMode = "typstyle",
+      exportPdf = "never",
+      semanticTokens = "disable",
+    },
+  })
+  
+  vim.lsp.config("zls", {})
+  vim.lsp.config("gopls", {})
+  
+  -- Enable all
+  vim.lsp.enable({
+    "texlab",
+    "julials",
+    "bashls",
+    "lua_ls",
+    "pylsp",
+    "tinymist",
+    "zls",
+    "gopls",
+  })
 
   local lspconfig = require'lspconfig'
   local function custom_on_attach(client)
