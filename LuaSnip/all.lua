@@ -28,7 +28,7 @@ s({trig="bgn", dscr="Expands 'beg' into an environment", snippetType="autosnippe
   )
 ),
 -- Equation
-s({trig="bqn", dscr="Expands 'beq' into an equation environment", snippetType="autosnippet"},
+s({trig="bqn", dscr="Expands 'bqn' into an equation environment", snippetType="autosnippet"},
   fmta(
      [[
 		\begin{equation}\begin{aligned}
@@ -187,6 +187,15 @@ s({trig="dw", snippetType="autosnippet", condition=in_mathzone},
 	 \downarrow
      ]],
 	 {}
+  )
+),
+-- dot product
+s({trig="dp", snippetType="autosnippet", condition=in_mathzone},
+  fmta(
+     [[
+	 \vec{<>} \cdot \vec{<>}
+     ]],
+	 { i(1), i(2)}
   )
 ),
 }
